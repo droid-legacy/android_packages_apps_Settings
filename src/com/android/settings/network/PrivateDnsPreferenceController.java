@@ -134,9 +134,43 @@ public class PrivateDnsPreferenceController extends BasePreferenceController
                         : res.getString(
                                 com.android.settingslib.R.string.private_dns_mode_opportunistic);
             case PRIVATE_DNS_MODE_PROVIDER_HOSTNAME:
-                return dnsesResolved
-                        ? PrivateDnsModeDialogPreference.getHostnameFromSettings(cr)
-                        : res.getString(com.android.settingslib.R.string.private_dns_mode_provider_failure);
+                if (!dnsesResolved) {
+                    return res.getString(com.android.settingslib.R.string.private_dns_mode_provider_failure);
+                }
+                final String privateDnsHostname =
+                        ConnectivitySettingsManager.getPrivateDnsHostname(mContext);
+                if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_adguard))) {
+                    return res.getString(R.string.private_dns_mode_adguard);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_appliedprivacy))) {
+                    return res.getString(R.string.private_dns_mode_appliedprivacy);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_cira))) {
+                    return res.getString(R.string.private_dns_mode_cira);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_cleanbrowsing))) {
+                    return res.getString(R.string.private_dns_mode_cleanbrowsing);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_cloudflare))) {
+                    return res.getString(R.string.private_dns_mode_cloudflare);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_controld))) {
+                    return res.getString(R.string.private_dns_mode_controld);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_cznic))) {
+                    return res.getString(R.string.private_dns_mode_cznic);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_dnszero))) {
+                    return res.getString(R.string.private_dns_mode_dnszero);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_dnssb))) {
+                    return res.getString(R.string.private_dns_mode_dnssb);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_google))) {
+                    return res.getString(R.string.private_dns_mode_google);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_mullvad))) {
+                    return res.getString(R.string.private_dns_mode_mullvad);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_quadnine))) {
+                    return res.getString(R.string.private_dns_mode_quadnine);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_restena))) {
+                    return res.getString(R.string.private_dns_mode_restena);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_switch))) {
+                    return res.getString(R.string.private_dns_mode_switch);
+                } else if (privateDnsHostname.equals(res.getString(R.string.private_dns_hostname_uncensoreddns))) {
+                    return res.getString(R.string.private_dns_mode_uncensoreddns);
+                }
+                return PrivateDnsModeDialogPreference.getHostnameFromSettings(cr);
         }
         return "";
     }

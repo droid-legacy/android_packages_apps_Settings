@@ -14257,6 +14257,9 @@
     <!-- The title of enter password dialog in bluetooth find broadcast page. [CHAR LIMIT=none] -->
     <string name="find_broadcast_password_dialog_title">Enter password</string>
 
+    <string name="connectivity_check_title">Internet connectivity check</string>
+    <string name="connectivity_check_summary">HTTP endpoints to use for performing internet connectivity checks.</string>
+
     <!-- Accessibility Software Cursor -->
 
     <!-- [CHAR LIMIT=NONE] Title for Accessibility Software Cursor setting for trigger hints. -->

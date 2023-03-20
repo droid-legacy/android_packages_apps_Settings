@@ -92,6 +92,13 @@
             settings:controller=
                 "com.android.settings.sound.MediaControlsLockScreenPreferenceController" />
 
+       <!-- AdBlock -->
+       <SwitchPreference
+           android:key="adblock_enabled"
+           android:title="@string/enable_adblock"
+           android:summary="@string/enable_adblock_summary"
+           settings:controller="com.android.settings.privacy.AdBlockPreferenceController"/>
+
         <!-- Content Capture -->
         <!-- NOTE: content capture has a different preference, depending whether or not the
              ContentCaptureService implementations defines a custom settings activitiy on its manifest.

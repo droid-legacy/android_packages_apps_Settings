@@ -155,4 +155,11 @@
         android:summary="@string/show_clip_access_notification_summary"
         settings:controller="com.android.settings.privacy.ShowClipAccessNotificationPreferenceController"/>
 
+    <!-- AdBlock -->
+    <SwitchPreference
+        android:key="adblock_enabled"
+        android:title="@string/enable_adblock"
+        android:summary="@string/enable_adblock_summary"
+        settings:controller="com.android.settings.privacy.AdBlockPreferenceController"/>
+
 </PreferenceScreen>

@@ -35,7 +35,6 @@ import com.android.settings.applications.ApplicationFeatureProvider;
 import com.android.settings.applications.ApplicationFeatureProviderImpl;
 import com.android.settings.applications.GameSettingsFeatureProvider;
 import com.android.settings.applications.GameSettingsFeatureProviderImpl;
-import com.android.settings.applications.GameSpaceFeatureProvider;
 import com.android.settings.applications.appinfo.ExtraAppInfoFeatureProvider;
 import com.android.settings.applications.appinfo.ExtraAppInfoFeatureProviderImpl;
 import com.android.settings.aware.AwareFeatureProvider;
@@ -338,7 +337,7 @@ public class FeatureFactoryImpl extends FeatureFactory {
     @Override
     public GameSettingsFeatureProvider getGameSettingsFeatureProvider() {
         if (mGameSettingsFeatureProvider == null) {
-            mGameSettingsFeatureProvider = new GameSpaceFeatureProvider();
+            mGameSettingsFeatureProvider = new GameSettingsFeatureProviderImpl();
         }
         return mGameSettingsFeatureProvider;
     }

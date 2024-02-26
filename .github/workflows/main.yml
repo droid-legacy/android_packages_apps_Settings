@@ -22,6 +22,10 @@ jobs:
         git fetch https://github.com/LineageOS/android_packages_apps_Settings.git lineage-19.1
         git rebase FETCH_HEAD
         git push -f
+        git checkout lineage-20.0
+        git fetch https://github.com/LineageOS/android_packages_apps_Settings.git lineage-20.0
+        git rebase FETCH_HEAD
+        git push -f
       env:
         GITHUB_EMAIL: ${{ secrets.EMAIL }}
         GITHUB_TOKEN: ${{ secrets.TOKEN }}

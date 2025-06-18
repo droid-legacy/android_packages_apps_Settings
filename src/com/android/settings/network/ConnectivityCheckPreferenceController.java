@@ -119,15 +119,15 @@ public class ConnectivityCheckPreferenceController
     private static final int DISABLED_CAPTIVE_PORTAL_INTVAL = 0;
     private static final int AMAZON_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 1;
     private static final int CLOUDFLARE_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 2;
-    private static final int DIVESTOS_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 3;
-    private static final int STANDARD_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 4;
-    private static final int HUAWEI_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 5;
-    private static final int KUKETZ_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 6;
-    private static final int MICROSOFT_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 7;
-    private static final int OPENSUSE_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 8;
-    private static final int UBUNTU_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 9;
-    private static final int XIAOMI_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 10;
-    private static final int GRAPHENEOS_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 11;
+    private static final int STANDARD_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 3;
+    private static final int HUAWEI_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 4;
+    private static final int KUKETZ_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 5;
+    private static final int MICROSOFT_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 6;
+    private static final int OPENSUSE_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 7;
+    private static final int UBUNTU_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 8;
+    private static final int XIAOMI_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 9;
+    private static final int GRAPHENEOS_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 10;
+    private static final int DIVESTOS_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 11;
 
     private static final String KEY_CONNECTIVITY_CHECK_SETTINGS =
             "connectivity_check_settings";

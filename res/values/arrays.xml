@@ -73,7 +73,6 @@
         <item>Disabled</item>
         <item>Amazon Fire OS (US)</item>
         <item>Cloudflare (US)</item>
-        <item>DivestOS (US)</item>
         <item>Google (US) [default]</item>
         <item>Huawei (CN)</item>
         <item>Kuketz (DE)</item>
@@ -82,6 +81,7 @@
         <item>Ubuntu (UK)</item>
         <!--<item>Xiaomi (CN)</item>-->
         <!--<item>GrapheneOS (CA)</item>-->
+        <!--<item>DivestOS (US)</item>-->
     </string-array>
 
     <string-array name="connectivity_check_values" translatable="false">
